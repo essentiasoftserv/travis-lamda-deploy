@@ -5,10 +5,13 @@ python:
 install:
   - pip install -r requirements.txt
 
+script:
+- flake8 .
+
 deploy:
   provider: lambda
   role:  "arn:aws:iam::887588581857:role/service-role/testapi-role-6l46nl97"
   region: "us-east-1"
   runtime: "python3.7"
   function_name: testing
-  edge: true
+  handler_name: lambda_handler

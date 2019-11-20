@@ -1,4 +1,4 @@
-# epicc_client
+# essentia
 
 ## Project setup
 ```

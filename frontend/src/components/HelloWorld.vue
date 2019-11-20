@@ -46,22 +46,22 @@
                     name: this.name,
                     // description: this.description
                 },
-                {
-                  headers: {
-                    ContentType: "application/x-www-form-urlencoded",
-                    Accept: "*/*",
-                    AccessControlAllowOrigin: "*", 
-                    AccessControlAllowCredentials: true 
+                // {
+                //   headers: {
+                //     ContentType: "application/x-www-form-urlencoded",
+                //     Accept: "*/*",
+                //     AccessControlAllowOrigin: "*", 
+                //     AccessControlAllowCredentials: true 
           
-                    }
+                //     }
 
-                    /*
-                    headers: {
-                      "Access-Control-Allow-Origin" : "*", // Required for CORS support to work
-                      "Access-Control-Allow-Credentials" : true // Required for cookies, authorization headers with HTTPS
-                    },
-                    */
-                }
+                //     /*
+                //     headers: {
+                //       "Access-Control-Allow-Origin" : "*", // Required for CORS support to work
+                //       "Access-Control-Allow-Credentials" : true // Required for cookies, authorization headers with HTTPS
+                //     },
+                //     */
+                // }
                 )
                 .then(function (response) {
                     currentObj.output = response.data;

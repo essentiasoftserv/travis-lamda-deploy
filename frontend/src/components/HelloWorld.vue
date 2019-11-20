@@ -43,8 +43,18 @@
                 e.preventDefault();
                 let currentObj = this;
                 this.axios.post('https://hb3gb6lzd4.execute-api.us-east-1.amazonaws.com/newstage/newdeploy', {
-                    name: this.name,
+                    // name: this.name,
                     // description: this.description
+
+                    "funct_name": "hcc2raf",
+                    "params": {
+                        "hcc_list": ["HCC18", "HCC19"],
+                        "age": 90,
+                        "ver": 23,
+                        "model": "v23",
+                        "disabl": 1,
+                        "baserate": 800
+                    }
                 },
                 // {
                 //   headers: {

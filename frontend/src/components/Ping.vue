@@ -43,7 +43,7 @@
                 e.preventDefault();
                 let currentObj = this;
                 console.log("inside button");
-                this.axios.post('httphttp://34.219.188.236/member', {
+                this.axios.post('http://34.219.188.236/member', {
                     // name: this.name,
                     // description: this.description
 

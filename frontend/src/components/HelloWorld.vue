@@ -44,7 +44,7 @@
                 let currentObj = this;
                 this.axios.post('https://hb3gb6lzd4.execute-api.us-east-1.amazonaws.com/newstage/newdeploy', {
                     // name: this.name,
-                    // description: this.description
+                    // descriptionCOndition: this.description
 
                     "funct_name": "hcc2raf",
                     "params": {

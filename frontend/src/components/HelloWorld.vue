@@ -35,14 +35,15 @@
             return {
               name: '',
               description: '',
-              output: ''
+              output: '',
+              api: process.env.VUE_APP_API,
             };
         },
         methods: {
             formSubmit(e) {
                 e.preventDefault();
                 let currentObj = this;
-                this.axios.post('https://hb3gb6lzd4.execute-api.us-east-1.amazonaws.com/newstage/newdeploy', {
+                this.axios.post(this.api, {
                     // name: this.name,
                     // descriptionCOndition: this.description
 
